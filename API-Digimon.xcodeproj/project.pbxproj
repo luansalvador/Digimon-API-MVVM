@@ -10,9 +10,14 @@
 		C965A04C284EBD6D00E69A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04B284EBD6D00E69A81 /* AppDelegate.swift */; };
 		C965A04E284EBD6D00E69A81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04D284EBD6D00E69A81 /* SceneDelegate.swift */; };
 		C965A050284EBD6D00E69A81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04F284EBD6D00E69A81 /* ViewController.swift */; };
-		C965A053284EBD6D00E69A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C965A051284EBD6D00E69A81 /* Main.storyboard */; };
 		C965A055284EBD6E00E69A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C965A054284EBD6E00E69A81 /* Assets.xcassets */; };
 		C965A058284EBD6E00E69A81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C965A056284EBD6E00E69A81 /* LaunchScreen.storyboard */; };
+		C965A060284EC7A400E69A81 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A05F284EC7A400E69A81 /* TableView.swift */; };
+		C965A062284ECC8200E69A81 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A061284ECC8200E69A81 /* CustomCell.swift */; };
+		C965A064284ED33A00E69A81 /* ConfigurableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A063284ED33A00E69A81 /* ConfigurableCellProtocol.swift */; };
+		C965A066284ED82000E69A81 /* DigimonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A065284ED82000E69A81 /* DigimonModel.swift */; };
+		C965A068284ED87C00E69A81 /* DigimonViewModelNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A067284ED87C00E69A81 /* DigimonViewModelNetworking.swift */; };
+		C9C35E4E284F90B6003929F0 /* DigimonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C35E4D284F90B6003929F0 /* DigimonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,15 @@
 		C965A04B284EBD6D00E69A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C965A04D284EBD6D00E69A81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C965A04F284EBD6D00E69A81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C965A052284EBD6D00E69A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C965A054284EBD6E00E69A81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C965A057284EBD6E00E69A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C965A059284EBD6E00E69A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C965A05F284EC7A400E69A81 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		C965A061284ECC8200E69A81 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C965A063284ED33A00E69A81 /* ConfigurableCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCellProtocol.swift; sourceTree = "<group>"; };
+		C965A065284ED82000E69A81 /* DigimonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonModel.swift; sourceTree = "<group>"; };
+		C965A067284ED87C00E69A81 /* DigimonViewModelNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModelNetworking.swift; sourceTree = "<group>"; };
+		C9C35E4D284F90B6003929F0 /* DigimonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,16 @@
 			children = (
 				C965A04B284EBD6D00E69A81 /* AppDelegate.swift */,
 				C965A04D284EBD6D00E69A81 /* SceneDelegate.swift */,
-				C965A04F284EBD6D00E69A81 /* ViewController.swift */,
-				C965A051284EBD6D00E69A81 /* Main.storyboard */,
 				C965A054284EBD6E00E69A81 /* Assets.xcassets */,
 				C965A056284EBD6E00E69A81 /* LaunchScreen.storyboard */,
 				C965A059284EBD6E00E69A81 /* Info.plist */,
+				C965A04F284EBD6D00E69A81 /* ViewController.swift */,
+				C965A05F284EC7A400E69A81 /* TableView.swift */,
+				C965A061284ECC8200E69A81 /* CustomCell.swift */,
+				C965A063284ED33A00E69A81 /* ConfigurableCellProtocol.swift */,
+				C965A065284ED82000E69A81 /* DigimonModel.swift */,
+				C965A067284ED87C00E69A81 /* DigimonViewModelNetworking.swift */,
+				C9C35E4D284F90B6003929F0 /* DigimonViewModel.swift */,
 			);
 			path = "API-Digimon";
 			sourceTree = "<group>";
@@ -127,7 +142,6 @@
 			files = (
 				C965A058284EBD6E00E69A81 /* LaunchScreen.storyboard in Resources */,
 				C965A055284EBD6E00E69A81 /* Assets.xcassets in Resources */,
-				C965A053284EBD6D00E69A81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C35E4E284F90B6003929F0 /* DigimonViewModel.swift in Sources */,
+				C965A066284ED82000E69A81 /* DigimonModel.swift in Sources */,
 				C965A050284EBD6D00E69A81 /* ViewController.swift in Sources */,
+				C965A060284EC7A400E69A81 /* TableView.swift in Sources */,
+				C965A068284ED87C00E69A81 /* DigimonViewModelNetworking.swift in Sources */,
+				C965A064284ED33A00E69A81 /* ConfigurableCellProtocol.swift in Sources */,
+				C965A062284ECC8200E69A81 /* CustomCell.swift in Sources */,
 				C965A04C284EBD6D00E69A81 /* AppDelegate.swift in Sources */,
 				C965A04E284EBD6D00E69A81 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C965A051284EBD6D00E69A81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C965A052284EBD6D00E69A81 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C965A056284EBD6E00E69A81 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +304,6 @@
 				INFOPLIST_FILE = "API-Digimon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +331,6 @@
 				INFOPLIST_FILE = "API-Digimon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
