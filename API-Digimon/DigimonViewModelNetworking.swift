@@ -8,10 +8,9 @@
 import Foundation
 import UIKit
 
-var digimonsArray: [DigimonModel] = []
-
-
 class DigimonViewModelNetworking {
+    
+    static var digimonsArray: [DigimonModel] = []
     
     class func getDigimon(_ completion: @escaping ([DigimonModel]) -> Void) {
         guard let url = URL(string: "https://digimon-api.vercel.app/api/digimon") else { return }
@@ -26,7 +25,6 @@ class DigimonViewModelNetworking {
                             print(digimon.img)
                             completion(digimons)
                         }
-                            //completion(digimons)
                     } catch {
                         print(error.localizedDescription)
                     }
@@ -40,7 +38,7 @@ class DigimonViewModelNetworking {
     }
     
     func digimonIMG(at indexPath: IndexPath, imageView: UIImageView?) {
-        guard let url = URL(string: digimonsArray[indexPath.row].img) else { return }
+        guard let url = URL(string: DigimonViewModelNetworking.digimonsArray[indexPath.row].img) else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             

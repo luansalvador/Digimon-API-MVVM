@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         self.title = "Lista de Digimons"
         setupView()
         DigimonViewModelNetworking.getDigimon { (digimons) in
-            digimonsArray = digimons
+            DigimonViewModelNetworking.digimonsArray = digimons
             DispatchQueue.main.async {
                 self.tableView.configureTableView().reloadData()
             }
@@ -32,14 +32,14 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return digimonsArray.count 
+        return DigimonViewModelNetworking.digimonsArray.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let digimonViewModelNetworking = DigimonViewModelNetworking()
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.identifier, for: indexPath) as? CustomCell
-        let digimonIndex = digimonsArray[indexPath.row]
+        let digimonIndex = DigimonViewModelNetworking.digimonsArray[indexPath.row]
         digimonViewModelNetworking.digimonIMG(at: indexPath, imageView: cell?.configureImage())
     
         cell?.configureCell(text: digimonIndex.name)
