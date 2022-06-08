@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct DigimonViewModelNetworking {
+struct Networking {
     
     //static var digimonsArray: [DigimonModel] = []
     

@@ -14,7 +14,6 @@ class CustomCell: UITableViewCell {
     
     private lazy var digimonImage: UIImageView = {
         let view = UIImageView()
-        //view.image = UIImage(systemName: "pencil")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -53,7 +52,11 @@ class CustomCell: UITableViewCell {
         ])
     }
     
-    public func configureImage() -> UIImageView {
+    public func configureImage() -> UIImage {
+        return digimonImage.image!
+    }
+    
+    public func configureImageView() -> UIImageView {
         return digimonImage
     }
 }
