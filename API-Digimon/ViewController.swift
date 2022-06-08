@@ -10,19 +10,27 @@ import UIKit
 class ViewController: UIViewController {
     
     let tableView = TableView()
+    var digimonViewModel = DigimonViewModel(digimons: [DigimonModel.init(name: "", img: "", level: "")])
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Lista de Digimons"
         setupView()
-        DigimonViewModelNetworking.getDigimon { (digimons) in
-            DigimonViewModelNetworking.digimonsArray = digimons
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
+        DigimonViewModelNetworking.getDigimons { (digimonsResponse) in
+            self.digimonViewModel.digimons = digimonsResponse
             DispatchQueue.main.async {
                 self.tableView.configureTableView().reloadData()
             }
         }
     }
-
+    
     private func setupView() {
         tableView.setupTableViewDelegate(parent: self)
         self.view = tableView
@@ -32,15 +40,15 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DigimonViewModelNetworking.digimonsArray.count
+        return digimonViewModel.digimons.count 
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let digimonViewModelNetworking = DigimonViewModelNetworking()
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.identifier, for: indexPath) as? CustomCell
-        let digimonIndex = DigimonViewModelNetworking.digimonsArray[indexPath.row]
-        digimonViewModelNetworking.digimonIMG(at: indexPath, imageView: cell?.configureImage())
+        let digimonIndex = digimonViewModel.digimons[indexPath.row]
+        digimonViewModelNetworking.digimonIMG(stringToURL: digimonIndex.img, imageView: cell?.configureImage())
     
         cell?.configureCell(text: digimonIndex.name)
         

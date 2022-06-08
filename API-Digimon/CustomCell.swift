@@ -54,7 +54,7 @@ class CustomCell: UITableViewCell {
     }
     
     public func configureImage() -> UIImageView {
-        return self.digimonImage
+        return digimonImage
     }
 }
 extension CustomCell: ConfigurableCellProtocol {
