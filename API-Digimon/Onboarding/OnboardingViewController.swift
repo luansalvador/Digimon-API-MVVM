@@ -23,7 +23,9 @@ class OnboardingViewController: UIViewController {
     }
     
     private func executeButton() {
-        let viewController = ViewController()
+        let digimonService = APIManager()
+        let digimonViewModel = DigimonViewModel(digimonService: digimonService)
+        let viewController = ViewController(viewModel: digimonViewModel)
         viewController.delegate = self
         navigationController?.pushViewController(viewController, animated: true)
     }

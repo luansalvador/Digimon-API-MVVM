@@ -61,10 +61,10 @@ class CustomCell: UITableViewCell {
     }
 }
 extension CustomCell: ConfigurableCellProtocol {
-    func configureCell(text: String?) {
+    func configureCell(text: String?, image: UIImage?) {
         self.label.text = text
+        self.digimonImage.image = image
     }
-    
 }
 
 

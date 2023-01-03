@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 protocol ConfigurableCellProtocol {
-    func configureCell(text: String?)
+    func configureCell(text: String?, image: UIImage?)
 }

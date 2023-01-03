@@ -16,7 +16,7 @@
 		C965A062284ECC8200E69A81 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A061284ECC8200E69A81 /* CustomCell.swift */; };
 		C965A064284ED33A00E69A81 /* ConfigurableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A063284ED33A00E69A81 /* ConfigurableCellProtocol.swift */; };
 		C965A066284ED82000E69A81 /* DigimonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A065284ED82000E69A81 /* DigimonModel.swift */; };
-		C965A068284ED87C00E69A81 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A067284ED87C00E69A81 /* Networking.swift */; };
+		C965A068284ED87C00E69A81 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A067284ED87C00E69A81 /* APIManager.swift */; };
 		C9AD6F0E285108EF009E8E05 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AD6F0D285108EF009E8E05 /* OnboardingView.swift */; };
 		C9AD6F1028510D9C009E8E05 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AD6F0F28510D9C009E8E05 /* OnboardingViewController.swift */; };
 		C9C35E4E284F90B6003929F0 /* DigimonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C35E4D284F90B6003929F0 /* DigimonViewModel.swift */; };
@@ -34,7 +34,7 @@
 		C965A061284ECC8200E69A81 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C965A063284ED33A00E69A81 /* ConfigurableCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCellProtocol.swift; sourceTree = "<group>"; };
 		C965A065284ED82000E69A81 /* DigimonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonModel.swift; sourceTree = "<group>"; };
-		C965A067284ED87C00E69A81 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		C965A067284ED87C00E69A81 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		C9AD6F0D285108EF009E8E05 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C9AD6F0F28510D9C009E8E05 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		C9C35E4D284F90B6003929F0 /* DigimonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModel.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			children = (
 				C9AD6F0C28510875009E8E05 /* Onboarding */,
 				C9AD6F0B2851083C009E8E05 /* Protocols */,
-				C9AD6F0A2851082A009E8E05 /* Networking */,
+				C9AD6F0A2851082A009E8E05 /* Service */,
 				C9AD6F0928510753009E8E05 /* DigimonsList */,
 				C965A04B284EBD6D00E69A81 /* AppDelegate.swift */,
 				C965A04D284EBD6D00E69A81 /* SceneDelegate.swift */,
@@ -95,12 +95,12 @@
 			path = DigimonsList;
 			sourceTree = "<group>";
 		};
-		C9AD6F0A2851082A009E8E05 /* Networking */ = {
+		C9AD6F0A2851082A009E8E05 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C965A067284ED87C00E69A81 /* Networking.swift */,
+				C965A067284ED87C00E69A81 /* APIManager.swift */,
 			);
-			path = Networking;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		C9AD6F0B2851083C009E8E05 /* Protocols */ = {
@@ -195,7 +195,7 @@
 				C965A050284EBD6D00E69A81 /* ViewController.swift in Sources */,
 				C9AD6F0E285108EF009E8E05 /* OnboardingView.swift in Sources */,
 				C965A060284EC7A400E69A81 /* TableView.swift in Sources */,
-				C965A068284ED87C00E69A81 /* Networking.swift in Sources */,
+				C965A068284ED87C00E69A81 /* APIManager.swift in Sources */,
 				C965A064284ED33A00E69A81 /* ConfigurableCellProtocol.swift in Sources */,
 				C965A062284ECC8200E69A81 /* CustomCell.swift in Sources */,
 				C965A04C284EBD6D00E69A81 /* AppDelegate.swift in Sources */,
