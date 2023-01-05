@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol UpadateViewProtocol {
+    func setImageFromUrl(url: URL)
+}
+
 class OnboardingView: UIView {
     
     var choiceAction: (() -> Void)?
@@ -71,10 +75,11 @@ class OnboardingView: UIView {
     
     @objc private func performChoice() {
         self.choiceAction?()
+    }    
+}
+
+extension OnboardingView: UpadateViewProtocol {
+    func setImageFromUrl(url: URL) {
+        self.imageView.kf.setImage(with: url)
     }
-    
-    public func setImage(image: UIImage) {
-        self.imageView.image = image
-    }
-    
 }

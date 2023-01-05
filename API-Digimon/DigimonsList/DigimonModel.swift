@@ -8,7 +8,7 @@
 import Foundation
 
 struct DigimonModel: Codable {
-    let name: String
-    let img: String
-    let level: String
+    let name: String?
+    let img: String?
+    let level: String?
 }

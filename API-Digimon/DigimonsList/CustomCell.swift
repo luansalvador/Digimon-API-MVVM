@@ -7,8 +7,11 @@
 
 import UIKit
 
+protocol ConfigurableCellProtocol {
+    func configureCell(text: String?, url: URL)
+}
+
 class CustomCell: UITableViewCell {
-    
     
     static var identifier = "CustomCell"
     
@@ -20,7 +23,6 @@ class CustomCell: UITableViewCell {
     
     private lazy var label: UILabel = {
         let view = UILabel()
-        view.text = "testando"
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -53,17 +55,21 @@ class CustomCell: UITableViewCell {
     }
     
     public func configureImage() -> UIImage {
-        return digimonImage.image!
+        return digimonImage.image ?? UIImage()
     }
     
     public func configureImageView() -> UIImageView {
         return digimonImage
     }
+    
+    public func getImage() -> UIImage {
+        return self.digimonImage.image ?? UIImage()
+    }
 }
 extension CustomCell: ConfigurableCellProtocol {
-    func configureCell(text: String?, image: UIImage?) {
+    func configureCell(text: String?, url: URL) {
         self.label.text = text
-        self.digimonImage.image = image
+        self.digimonImage.kf.setImage(with: url)
     }
 }
 
