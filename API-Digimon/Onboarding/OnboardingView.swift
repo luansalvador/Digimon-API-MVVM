@@ -27,6 +27,7 @@ class OnboardingView: UIView {
     
     private lazy var imageView: UIImageView = {
         let view = UIImageView()
+        view.image = UIImage(named: "interrogacao-img")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
