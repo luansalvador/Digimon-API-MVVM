@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol UpadateViewProtocol {
+    func setImageFromUrl(url: URL)
+}
+
 class OnboardingView: UIView {
     
     var choiceAction: (() -> Void)?
@@ -23,6 +27,7 @@ class OnboardingView: UIView {
     
     private lazy var imageView: UIImageView = {
         let view = UIImageView()
+        view.image = UIImage(named: "interrogacao-img")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -71,10 +76,14 @@ class OnboardingView: UIView {
     
     @objc private func performChoice() {
         self.choiceAction?()
+    }    
+}
+
+extension OnboardingView: UpadateViewProtocol {
+    func setImageFromUrl(url: URL) {
+        DispatchQueue.main.async {
+            self.imageView.kf.setImage(with: url)
+        }
+        
     }
-    
-    public func setImage(image: UIImage) {
-        self.imageView.image = image
-    }
-    
 }

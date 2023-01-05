@@ -7,37 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03D04C3B132914634C5E2DBC /* Pods_API_Digimon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15979882FF96BB75E6892117 /* Pods_API_Digimon.framework */; };
 		C965A04C284EBD6D00E69A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04B284EBD6D00E69A81 /* AppDelegate.swift */; };
 		C965A04E284EBD6D00E69A81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04D284EBD6D00E69A81 /* SceneDelegate.swift */; };
-		C965A050284EBD6D00E69A81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04F284EBD6D00E69A81 /* ViewController.swift */; };
+		C965A050284EBD6D00E69A81 /* DigimonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04F284EBD6D00E69A81 /* DigimonListViewController.swift */; };
 		C965A055284EBD6E00E69A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C965A054284EBD6E00E69A81 /* Assets.xcassets */; };
 		C965A058284EBD6E00E69A81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C965A056284EBD6E00E69A81 /* LaunchScreen.storyboard */; };
 		C965A060284EC7A400E69A81 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A05F284EC7A400E69A81 /* TableView.swift */; };
 		C965A062284ECC8200E69A81 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A061284ECC8200E69A81 /* CustomCell.swift */; };
-		C965A064284ED33A00E69A81 /* ConfigurableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A063284ED33A00E69A81 /* ConfigurableCellProtocol.swift */; };
 		C965A066284ED82000E69A81 /* DigimonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A065284ED82000E69A81 /* DigimonModel.swift */; };
-		C965A068284ED87C00E69A81 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A067284ED87C00E69A81 /* Networking.swift */; };
+		C965A068284ED87C00E69A81 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A067284ED87C00E69A81 /* APIManager.swift */; };
 		C9AD6F0E285108EF009E8E05 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AD6F0D285108EF009E8E05 /* OnboardingView.swift */; };
 		C9AD6F1028510D9C009E8E05 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AD6F0F28510D9C009E8E05 /* OnboardingViewController.swift */; };
 		C9C35E4E284F90B6003929F0 /* DigimonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C35E4D284F90B6003929F0 /* DigimonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15979882FF96BB75E6892117 /* Pods_API_Digimon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API_Digimon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43651C0D8C9A1FFB9D6BBE3E /* Pods-API-Digimon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API-Digimon.debug.xcconfig"; path = "Target Support Files/Pods-API-Digimon/Pods-API-Digimon.debug.xcconfig"; sourceTree = "<group>"; };
 		C965A048284EBD6D00E69A81 /* API-Digimon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "API-Digimon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C965A04B284EBD6D00E69A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C965A04D284EBD6D00E69A81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C965A04F284EBD6D00E69A81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C965A04F284EBD6D00E69A81 /* DigimonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonListViewController.swift; sourceTree = "<group>"; };
 		C965A054284EBD6E00E69A81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C965A057284EBD6E00E69A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C965A059284EBD6E00E69A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C965A05F284EC7A400E69A81 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		C965A061284ECC8200E69A81 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		C965A063284ED33A00E69A81 /* ConfigurableCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCellProtocol.swift; sourceTree = "<group>"; };
 		C965A065284ED82000E69A81 /* DigimonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonModel.swift; sourceTree = "<group>"; };
-		C965A067284ED87C00E69A81 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		C965A067284ED87C00E69A81 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		C9AD6F0D285108EF009E8E05 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C9AD6F0F28510D9C009E8E05 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		C9C35E4D284F90B6003929F0 /* DigimonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModel.swift; sourceTree = "<group>"; };
+		CF2417243696EA87D7716933 /* Pods-API-Digimon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API-Digimon.release.xcconfig"; path = "Target Support Files/Pods-API-Digimon/Pods-API-Digimon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +47,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D04C3B132914634C5E2DBC /* Pods_API_Digimon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC576AC2967054B00B6E0A9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C965A04B284EBD6D00E69A81 /* AppDelegate.swift */,
+				C965A04D284EBD6D00E69A81 /* SceneDelegate.swift */,
+				C965A054284EBD6E00E69A81 /* Assets.xcassets */,
+				C965A056284EBD6E00E69A81 /* LaunchScreen.storyboard */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1465D0069C3DF55E98DB0916 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43651C0D8C9A1FFB9D6BBE3E /* Pods-API-Digimon.debug.xcconfig */,
+				CF2417243696EA87D7716933 /* Pods-API-Digimon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C965A03F284EBD6D00E69A81 = {
 			isa = PBXGroup;
 			children = (
 				C965A04A284EBD6D00E69A81 /* API-Digimon */,
 				C965A049284EBD6D00E69A81 /* Products */,
+				1465D0069C3DF55E98DB0916 /* Pods */,
+				D9BE252B86F009063A5DC154 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,14 +95,10 @@
 		C965A04A284EBD6D00E69A81 /* API-Digimon */ = {
 			isa = PBXGroup;
 			children = (
+				0FC576AC2967054B00B6E0A9 /* Source */,
 				C9AD6F0C28510875009E8E05 /* Onboarding */,
-				C9AD6F0B2851083C009E8E05 /* Protocols */,
-				C9AD6F0A2851082A009E8E05 /* Networking */,
+				C9AD6F0A2851082A009E8E05 /* Service */,
 				C9AD6F0928510753009E8E05 /* DigimonsList */,
-				C965A04B284EBD6D00E69A81 /* AppDelegate.swift */,
-				C965A04D284EBD6D00E69A81 /* SceneDelegate.swift */,
-				C965A054284EBD6E00E69A81 /* Assets.xcassets */,
-				C965A056284EBD6E00E69A81 /* LaunchScreen.storyboard */,
 				C965A059284EBD6E00E69A81 /* Info.plist */,
 			);
 			path = "API-Digimon";
@@ -90,25 +111,17 @@
 				C965A065284ED82000E69A81 /* DigimonModel.swift */,
 				C965A061284ECC8200E69A81 /* CustomCell.swift */,
 				C965A05F284EC7A400E69A81 /* TableView.swift */,
-				C965A04F284EBD6D00E69A81 /* ViewController.swift */,
+				C965A04F284EBD6D00E69A81 /* DigimonListViewController.swift */,
 			);
 			path = DigimonsList;
 			sourceTree = "<group>";
 		};
-		C9AD6F0A2851082A009E8E05 /* Networking */ = {
+		C9AD6F0A2851082A009E8E05 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C965A067284ED87C00E69A81 /* Networking.swift */,
+				C965A067284ED87C00E69A81 /* APIManager.swift */,
 			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		C9AD6F0B2851083C009E8E05 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				C965A063284ED33A00E69A81 /* ConfigurableCellProtocol.swift */,
-			);
-			path = Protocols;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		C9AD6F0C28510875009E8E05 /* Onboarding */ = {
@@ -120,6 +133,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		D9BE252B86F009063A5DC154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15979882FF96BB75E6892117 /* Pods_API_Digimon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C965A05C284EBD6E00E69A81 /* Build configuration list for PBXNativeTarget "API-Digimon" */;
 			buildPhases = (
+				0112CEB58F29519853E4F1CB /* [CP] Check Pods Manifest.lock */,
 				C965A044284EBD6D00E69A81 /* Sources */,
 				C965A045284EBD6D00E69A81 /* Frameworks */,
 				C965A046284EBD6D00E69A81 /* Resources */,
+				D820EAB64B2F19B44061C1F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +208,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0112CEB58F29519853E4F1CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-API-Digimon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D820EAB64B2F19B44061C1F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-API-Digimon/Pods-API-Digimon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-API-Digimon/Pods-API-Digimon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-API-Digimon/Pods-API-Digimon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C965A044284EBD6D00E69A81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -192,11 +257,10 @@
 			files = (
 				C9C35E4E284F90B6003929F0 /* DigimonViewModel.swift in Sources */,
 				C965A066284ED82000E69A81 /* DigimonModel.swift in Sources */,
-				C965A050284EBD6D00E69A81 /* ViewController.swift in Sources */,
+				C965A050284EBD6D00E69A81 /* DigimonListViewController.swift in Sources */,
 				C9AD6F0E285108EF009E8E05 /* OnboardingView.swift in Sources */,
 				C965A060284EC7A400E69A81 /* TableView.swift in Sources */,
-				C965A068284ED87C00E69A81 /* Networking.swift in Sources */,
-				C965A064284ED33A00E69A81 /* ConfigurableCellProtocol.swift in Sources */,
+				C965A068284ED87C00E69A81 /* APIManager.swift in Sources */,
 				C965A062284ECC8200E69A81 /* CustomCell.swift in Sources */,
 				C965A04C284EBD6D00E69A81 /* AppDelegate.swift in Sources */,
 				C9AD6F1028510D9C009E8E05 /* OnboardingViewController.swift in Sources */,
@@ -334,6 +398,7 @@
 		};
 		C965A05D284EBD6E00E69A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43651C0D8C9A1FFB9D6BBE3E /* Pods-API-Digimon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,6 +426,7 @@
 		};
 		C965A05E284EBD6E00E69A81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF2417243696EA87D7716933 /* Pods-API-Digimon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

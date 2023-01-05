@@ -8,13 +8,13 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-    
+        
     let onboardingView = OnboardingView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-        
+
     }
     
     private func configureView() {
@@ -23,16 +23,17 @@ class OnboardingViewController: UIViewController {
     }
     
     private func executeButton() {
-        let viewController = ViewController()
+        let digimonService = APIManager()
+        let digimonViewModel = DigimonViewModel(digimonService: digimonService)
+        let viewController = DigimonListViewController(viewModel: digimonViewModel)
         viewController.delegate = self
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
-extension OnboardingViewController: SendImageDelegate {
-    func getImage(image: UIImage) {
-        onboardingView.setImage(image: image)
+extension OnboardingViewController: DigimonListViewControllerDelegate {
+    func getImageFromTableViewCell(url: URL?) {
+        guard let url = url else { return }
+        onboardingView.setImageFromUrl(url: url)
     }
-    
-    
 }
