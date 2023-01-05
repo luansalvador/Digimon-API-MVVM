@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 protocol DigimonListViewControllerDelegate: AnyObject {
-    func getImageUrl(url: URL?)
+    func getImageFromTableViewCell(url: URL?)
 }
 
 class DigimonListViewController: UIViewController {
@@ -19,8 +19,6 @@ class DigimonListViewController: UIViewController {
     weak var delegate: DigimonListViewControllerDelegate?
     
     private var allDigimons: [DigimonModel]?
-    private var urlFromString: URL?
-    private var actualCell: UITableViewCell?
     
     init(viewModel: DigimonViewModel) {
         self.viewModel = viewModel
@@ -67,16 +65,15 @@ extension DigimonListViewController: UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.identifier, for: indexPath) as? CustomCell
         guard let allDigimons = self.allDigimons else { return UITableViewCell() }
         let digimonIndex = allDigimons[indexPath.row]
-        self.urlFromString = URL(string: digimonIndex.img ?? "")
-        guard let url = urlFromString else { return UITableViewCell() }
-        print(digimonIndex)
+        guard let url = URL(string: digimonIndex.img ?? "") else { return UITableViewCell() }
         cell?.configureCell(text: digimonIndex.name, url: url)
         return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-        self.delegate?.getImageUrl(url: self.urlFromString)
+        let digimonIndex = self.allDigimons?[indexPath.row].img ?? ""
+        guard let url = URL(string: digimonIndex) else { return }
+        self.delegate?.getImageFromTableViewCell(url: url)
         self.navigationController?.popViewController(animated: true)
     }
     

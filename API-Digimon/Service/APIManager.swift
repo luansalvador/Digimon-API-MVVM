@@ -22,17 +22,15 @@ class APIManager: DigimonService {
                   let response = response as? HTTPURLResponse else { return }
             
             let statusCodeValids = [200, 201]
-            let statusCode = response.statusCode 
+            let statusCode = response.statusCode
             if statusCodeValids.contains(statusCode) {
                 guard let data = data else { return }
                 
-               // DispatchQueue.main.async {
-                    if let digimon = try? JSONDecoder().decode([DigimonModel].self, from: data){
-                        completion(.success(digimon))
-                    } else {
-                        completion(.failure(NSError()))
-                    }
-               // }
+                if let digimon = try? JSONDecoder().decode([DigimonModel].self, from: data){
+                    completion(.success(digimon))
+                } else {
+                    completion(.failure(NSError()))
+                }
             }
         }.resume()
     }

@@ -80,6 +80,9 @@ class OnboardingView: UIView {
 
 extension OnboardingView: UpadateViewProtocol {
     func setImageFromUrl(url: URL) {
-        self.imageView.kf.setImage(with: url)
+        DispatchQueue.main.async {
+            self.imageView.kf.setImage(with: url)
+        }
+        
     }
 }

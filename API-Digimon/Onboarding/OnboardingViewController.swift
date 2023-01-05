@@ -32,7 +32,7 @@ class OnboardingViewController: UIViewController {
 }
 
 extension OnboardingViewController: DigimonListViewControllerDelegate {
-    func getImageUrl(url: URL?) {
+    func getImageFromTableViewCell(url: URL?) {
         guard let url = url else { return }
         onboardingView.setImageFromUrl(url: url)
     }
