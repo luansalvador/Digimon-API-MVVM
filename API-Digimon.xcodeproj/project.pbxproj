@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		03D04C3B132914634C5E2DBC /* Pods_API_Digimon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15979882FF96BB75E6892117 /* Pods_API_Digimon.framework */; };
+		0FE4E19E29758C1B008F7CDD /* DigimonViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE4E19D29758C1B008F7CDD /* DigimonViewModelTest.swift */; };
+		0FE4E1A62975A461008F7CDD /* MockDigimonServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE4E1A52975A461008F7CDD /* MockDigimonServiceSpy.swift */; };
+		0FE4E1A82975A48F008F7CDD /* DigimonViewModelDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE4E1A72975A48F008F7CDD /* DigimonViewModelDelegateSpy.swift */; };
 		C965A04C284EBD6D00E69A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04B284EBD6D00E69A81 /* AppDelegate.swift */; };
 		C965A04E284EBD6D00E69A81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04D284EBD6D00E69A81 /* SceneDelegate.swift */; };
 		C965A050284EBD6D00E69A81 /* DigimonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A04F284EBD6D00E69A81 /* DigimonListViewController.swift */; };
@@ -22,7 +25,21 @@
 		C9C35E4E284F90B6003929F0 /* DigimonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C35E4D284F90B6003929F0 /* DigimonViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0FE4E19F29758C1B008F7CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C965A040284EBD6D00E69A81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C965A047284EBD6D00E69A81;
+			remoteInfo = "API-Digimon";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0FE4E19B29758C1B008F7CDD /* API-DigimonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "API-DigimonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE4E19D29758C1B008F7CDD /* DigimonViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModelTest.swift; sourceTree = "<group>"; };
+		0FE4E1A52975A461008F7CDD /* MockDigimonServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDigimonServiceSpy.swift; sourceTree = "<group>"; };
+		0FE4E1A72975A48F008F7CDD /* DigimonViewModelDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModelDelegateSpy.swift; sourceTree = "<group>"; };
 		15979882FF96BB75E6892117 /* Pods_API_Digimon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API_Digimon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43651C0D8C9A1FFB9D6BBE3E /* Pods-API-Digimon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API-Digimon.debug.xcconfig"; path = "Target Support Files/Pods-API-Digimon/Pods-API-Digimon.debug.xcconfig"; sourceTree = "<group>"; };
 		C965A048284EBD6D00E69A81 /* API-Digimon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "API-Digimon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0FE4E19829758C1B008F7CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C965A045284EBD6D00E69A81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +89,24 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		0FE4E19C29758C1B008F7CDD /* API-DigimonTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FE4E1A429758C3B008F7CDD /* DigimonsListTests */,
+			);
+			path = "API-DigimonTests";
+			sourceTree = "<group>";
+		};
+		0FE4E1A429758C3B008F7CDD /* DigimonsListTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FE4E19D29758C1B008F7CDD /* DigimonViewModelTest.swift */,
+				0FE4E1A52975A461008F7CDD /* MockDigimonServiceSpy.swift */,
+				0FE4E1A72975A48F008F7CDD /* DigimonViewModelDelegateSpy.swift */,
+			);
+			path = DigimonsListTests;
+			sourceTree = "<group>";
+		};
 		1465D0069C3DF55E98DB0916 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				C965A04A284EBD6D00E69A81 /* API-Digimon */,
+				0FE4E19C29758C1B008F7CDD /* API-DigimonTests */,
 				C965A049284EBD6D00E69A81 /* Products */,
 				1465D0069C3DF55E98DB0916 /* Pods */,
 				D9BE252B86F009063A5DC154 /* Frameworks */,
@@ -88,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				C965A048284EBD6D00E69A81 /* API-Digimon.app */,
+				0FE4E19B29758C1B008F7CDD /* API-DigimonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +188,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0FE4E19A29758C1B008F7CDD /* API-DigimonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE4E1A329758C1B008F7CDD /* Build configuration list for PBXNativeTarget "API-DigimonTests" */;
+			buildPhases = (
+				0FE4E19729758C1B008F7CDD /* Sources */,
+				0FE4E19829758C1B008F7CDD /* Frameworks */,
+				0FE4E19929758C1B008F7CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FE4E1A029758C1B008F7CDD /* PBXTargetDependency */,
+			);
+			name = "API-DigimonTests";
+			productName = "API-DigimonTests";
+			productReference = 0FE4E19B29758C1B008F7CDD /* API-DigimonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C965A047284EBD6D00E69A81 /* API-Digimon */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C965A05C284EBD6E00E69A81 /* Build configuration list for PBXNativeTarget "API-Digimon" */;
@@ -170,9 +232,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					0FE4E19A29758C1B008F7CDD = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C965A047284EBD6D00E69A81;
+					};
 					C965A047284EBD6D00E69A81 = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -192,11 +258,19 @@
 			projectRoot = "";
 			targets = (
 				C965A047284EBD6D00E69A81 /* API-Digimon */,
+				0FE4E19A29758C1B008F7CDD /* API-DigimonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0FE4E19929758C1B008F7CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C965A046284EBD6D00E69A81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +325,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0FE4E19729758C1B008F7CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE4E1A82975A48F008F7CDD /* DigimonViewModelDelegateSpy.swift in Sources */,
+				0FE4E1A62975A461008F7CDD /* MockDigimonServiceSpy.swift in Sources */,
+				0FE4E19E29758C1B008F7CDD /* DigimonViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C965A044284EBD6D00E69A81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +354,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0FE4E1A029758C1B008F7CDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C965A047284EBD6D00E69A81 /* API-Digimon */;
+			targetProxy = 0FE4E19F29758C1B008F7CDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		C965A056284EBD6E00E69A81 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -282,6 +374,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0FE4E1A129758C1B008F7CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HXRS3CF57N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.practicing.API-DigimonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/API-Digimon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/API-Digimon";
+			};
+			name = Debug;
+		};
+		0FE4E1A229758C1B008F7CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HXRS3CF57N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.practicing.API-DigimonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/API-Digimon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/API-Digimon";
+			};
+			name = Release;
+		};
 		C965A05A284EBD6E00E69A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -455,6 +593,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0FE4E1A329758C1B008F7CDD /* Build configuration list for PBXNativeTarget "API-DigimonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE4E1A129758C1B008F7CDD /* Debug */,
+				0FE4E1A229758C1B008F7CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C965A043284EBD6D00E69A81 /* Build configuration list for PBXProject "API-Digimon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
